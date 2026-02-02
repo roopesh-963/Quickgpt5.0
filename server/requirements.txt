@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+beanie
+motor
+python-dotenv
+bcrypt
+PyJWT
+stripe
+imagekitio
+httpx
+google-generativeai

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+/* Dark mode variant (Tailwind v4 correct syntax) */
+@custom-variant dark (
+  &:where(.dark, .dark *)
+);
+
+/* Theme variables */
+@theme {
+  --color-primary: #E6CCFF;
+}
+
+/* Base styles */
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+.reset-tw :not(pre):not(code){
+  all: revert;
+}
+.loader div:nth-child(2){
+  animation-delay: 0.2s;
+}
+.loader div:nth-child(3){
+  animation-delay: 0.4s;
+}
+
+html {
+  scrollbar-width: none;
+}
